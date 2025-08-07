@@ -38,7 +38,9 @@
     "start": "node build/index.mjs",
     "dev": "node scripts/check-build.mjs && pnpm run start",
     "test": "vitest run",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "pnpm run build",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.11.4",
